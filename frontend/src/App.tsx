@@ -1,16 +1,14 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import darkTheme, { lightTheme } from "./style/theme";
+import { lightTheme } from "./style/theme";
 import GlobalStyle from "./style/globalStyle";
-import Button from "./reusable/buttons/Button";
+import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
-
-
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <div>Home</div>,
+      element: <Navbar />,
     },
     {
       path: "/about",
@@ -18,16 +16,10 @@ const App = () => {
     },
   ]);
 
-
   return (
     <ThemeProvider theme={lightTheme}>
       <RouterProvider router={router} />
       <GlobalStyle />
-      <Button label="Click Me" onClick={()=>{
-        console.log("Button Clicked");
-      }} 
-      
-      />
     </ThemeProvider>
   );
 };

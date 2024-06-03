@@ -7,6 +7,7 @@ type darkThemeTypes = {
     font_family_one?: string;
     font_family_two?: string;
     buttonColor?: string;
+    boxShadow?: string;
 }
 
 
@@ -28,8 +29,10 @@ export const lightTheme: darkThemeTypes = {
     buttonColor: "#7843e9",
     backgroundColor: "#e7e7e7",
     textColor: "#111111",
+    lightTextColor: "#555555",
     font_family_one: 'Montserrat,sans-serif',
     font_family_two: 'Reddit Sans,sans-serif',
+    boxShadow:"0 10px 100px rgba(0,0,0,0.1)",
 
 
 

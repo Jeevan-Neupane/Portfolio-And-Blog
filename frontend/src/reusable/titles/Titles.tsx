@@ -1,9 +1,17 @@
-import React from 'react'
+import { SubTitleBox, TitleBoxHeading, TitleOuterBox } from "./style";
 
-const Titles = () => {
+type TitlesProps = {
+  title: string;
+  subtitle: string;
+};
+
+const Titles = ({ title, subtitle }: TitlesProps) => {
   return (
-    <div>Titles</div>
-  )
-}
+    <TitleOuterBox>
+      <TitleBoxHeading>{title}</TitleBoxHeading>
+      <SubTitleBox>{subtitle}</SubTitleBox>
+    </TitleOuterBox>
+  );
+};
 
-export default Titles
+export default Titles;
