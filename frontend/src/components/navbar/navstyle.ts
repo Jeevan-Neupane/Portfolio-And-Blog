@@ -32,7 +32,7 @@ export const HeaderLogoContainer = styled(Link)`
 
 `;
 
-export const HeaderImageContainer=styled.div`
+export const HeaderImageContainer = styled.div`
 width:5rem;
 height:5rem;
 border-radius:50px;
@@ -42,7 +42,7 @@ border:2px solid ${props => props.theme.highlightColor};
 margin-right:1.5rem;
 `
 
-export const HeaderImage=styled.img`
+export const HeaderImage = styled.img`
 width:100%;
 height:100%;
 object-fit:cover;
@@ -50,9 +50,42 @@ object-position:center;
 display:block;
 
 `
-export const Myname=styled.span`
+export const Myname = styled.span`
 font-size:1.8rem;
 text-transform:uppercase;
 font-weight:700;
 letter-spacing:1px;
+`
+
+
+export const NavDiv = styled.div`
+
+`
+
+export const NavList = styled.ul`
+display:flex;
+`
+
+
+export const NavItem = styled.li`
+list-style:none;
+
+
+
+`
+
+export const Links = styled.a`
+  padding: 2.2rem 3rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  color: ${props => props.theme.navLinkColor};
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
+  transition: color .3s;
+  text-decoration: none;
+  &:hover {
+    color: ${props => props.theme.highlightColor};
+  }
+  cursor: pointer;
 `

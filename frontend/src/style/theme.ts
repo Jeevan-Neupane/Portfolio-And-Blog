@@ -8,6 +8,7 @@ type darkThemeTypes = {
     font_family_two?: string;
     buttonColor?: string;
     boxShadow?: string;
+    navLinkColor?: string;
 }
 
 
@@ -33,6 +34,7 @@ export const lightTheme: darkThemeTypes = {
     font_family_one: 'Montserrat,sans-serif',
     font_family_two: 'Reddit Sans,sans-serif',
     boxShadow:"0 10px 100px rgba(0,0,0,0.1)",
+    navLinkColor: "#333333",
 
 
 
