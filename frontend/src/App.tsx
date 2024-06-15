@@ -3,12 +3,18 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./style/theme";
 import GlobalStyle from "./style/globalStyle";
 import Navbar from "./components/navbar/Navbar";
+import Home from "./components/home/Home";
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Navbar />,
+      element: (
+        <>
+          <Navbar />
+          <Home />
+        </>
+      ),
     },
     {
       path: "/about",
