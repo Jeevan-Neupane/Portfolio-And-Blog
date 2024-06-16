@@ -10,6 +10,9 @@ type darkThemeTypes = {
     boxShadow?: string;
     navLinkColor?: string;
     hoverColor?:string;
+    aboutComponentBackground?:string;
+    skillsBoxBackground?:string;
+    skillsBoxColor?:string;
 }
 
 
@@ -36,7 +39,10 @@ export const lightTheme: darkThemeTypes = {
     font_family_two: 'Reddit Sans,sans-serif',
     boxShadow:"0 10px 100px rgba(0,0,0,0.1)",
     navLinkColor: "#333333",
-    hoverColor:"#e4d9fb"
+    hoverColor:"#e4d9fb",
+    aboutComponentBackground:"#fafafa",
+    skillsBoxBackground:"rgba(153,153,153,0.2)",
+    skillsBoxColor:"#666666"
 
 
 

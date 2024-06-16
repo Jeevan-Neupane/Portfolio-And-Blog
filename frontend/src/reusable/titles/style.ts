@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const TitleOuterBox = styled.div`
 text-align:center;
+margin-bottom:9rem;
 `
 
 export const TitleBoxHeading = styled.h1`
@@ -11,6 +12,7 @@ font-size:4rem;
 text-transform: uppercase;
 letter-spacing:0.3rem;
 display:block;
+font-weight:800;
 
 &::after {
     content: '';

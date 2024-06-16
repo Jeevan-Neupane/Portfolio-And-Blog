@@ -5,13 +5,11 @@ import {
   HomeHeroButtonsDiv,
   HomeInfo,
   HomeInfoDiv,
-  HomeSocialMediaDiv,
   HomeTitle,
-  SocialMediaIcon,
-  SocialMediaIconLink,
 } from "./style";
 import cv from "../../assets/cv.pdf";
-import { socialMedia } from "../../data/socialMedia";
+import SocialMedia from "./SocialMedia";
+import ScrollIndicator from "./ScrollIndicator";
 
 type Props = {};
 
@@ -58,17 +56,8 @@ const Home = ({}: Props) => {
           </a>
         </HomeHeroButtonsDiv>
       </HomeContent>
-      <HomeSocialMediaDiv>
-        {socialMedia.map((item) => {
-          return (
-            <SocialMediaIcon key={item.name}>
-              <SocialMediaIconLink href={item.url} target="_blank">
-                <item.icon />
-              </SocialMediaIconLink>
-            </SocialMediaIcon>
-          );
-        })}
-      </HomeSocialMediaDiv>
+      <SocialMedia />
+      <ScrollIndicator />
     </HomeHero>
   );
 };

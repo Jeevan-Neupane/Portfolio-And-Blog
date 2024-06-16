@@ -50,6 +50,11 @@ gap: 5rem;
 
 `
 
+
+
+
+//*Social Media*//
+
 export const HomeSocialMediaDiv=styled.div`
 position: absolute;
   top: 50%;
@@ -84,3 +89,53 @@ width: 100%;
       background: ${props=>props.theme.hoverColor};  ;
     }
 `
+
+
+//*Scroll Down*//
+
+export const ScrollDownDiv=styled.div`
+
+position: absolute;
+bottom: 3%;
+left: 50%;
+transform: translateX(-50%);
+`
+
+export const ScrollDownMouseIcon=styled.div`
+width: 25px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+
+
+
+
+
+@keyframes wheel {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+}
+
+&::after{
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  transform: translateX(-50%);
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1.3s infinite;
+}
+`
+

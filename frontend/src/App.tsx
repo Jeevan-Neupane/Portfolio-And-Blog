@@ -4,6 +4,7 @@ import { lightTheme } from "./style/theme";
 import GlobalStyle from "./style/globalStyle";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
+import About from "./components/about/About";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -13,6 +14,7 @@ const App = () => {
         <>
           <Navbar />
           <Home />
+          <About />
         </>
       ),
     },
