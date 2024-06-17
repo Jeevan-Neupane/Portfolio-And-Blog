@@ -15,7 +15,7 @@ type Props = {};
 
 const Home = ({}: Props) => {
   return (
-    <HomeHero>
+    <HomeHero id='home'>
       <HomeContent>
         <HomeTitle>Hey, I'm Jeevan Neupane</HomeTitle>
         <HomeInfoDiv>

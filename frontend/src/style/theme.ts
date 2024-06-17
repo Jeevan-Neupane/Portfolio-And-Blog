@@ -13,6 +13,10 @@ type darkThemeTypes = {
     aboutComponentBackground?:string;
     skillsBoxBackground?:string;
     skillsBoxColor?:string;
+    projectsBackground?:string;
+    formBackground?:string;
+    footerBackground?:string;
+    footerColor?:string;
 }
 
 
@@ -42,7 +46,11 @@ export const lightTheme: darkThemeTypes = {
     hoverColor:"#e4d9fb",
     aboutComponentBackground:"#fafafa",
     skillsBoxBackground:"rgba(153,153,153,0.2)",
-    skillsBoxColor:"#666666"
+    skillsBoxColor:"#666666",
+    projectsBackground:"#ffffff",
+    formBackground:"#ffffff",
+    footerBackground:"#000000",
+    footerColor:"#ffffff",
 
 
 

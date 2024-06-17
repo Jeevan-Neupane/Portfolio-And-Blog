@@ -32,7 +32,7 @@ const Knowme = () => {
         </KnowMeParagraph>
       </KnowMeDetails>
 
-      <ContactButton href='#contacts'>
+      <ContactButton href='#contact'>
         <Button
           label='Contact Me'
           onClick={() => {}}
