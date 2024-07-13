@@ -7,6 +7,7 @@ import {
   KnowMeParagraph,
 } from "./style";
 
+/* eslint-disable react/no-unescaped-entities */
 const Knowme = () => {
   return (
     <KnowMeDiv>

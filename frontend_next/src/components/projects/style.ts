@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { WrapperContainer } from "../../style/Containers";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export const ProjectsWrapper = styled(WrapperContainer)`
 background-color:${props => props.theme.projectsBackground};

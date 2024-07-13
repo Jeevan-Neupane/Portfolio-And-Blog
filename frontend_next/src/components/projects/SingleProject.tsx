@@ -1,3 +1,6 @@
+'use client'
+import React from "react";
+import { StaticImageData } from "next/image";
 import Button from "../../reusable/buttons/Button";
 import {
   SingleProjectButton,
@@ -10,7 +13,7 @@ import {
 } from "./style";
 
 type SingleProjectProps = {
-  image: string;
+  image: StaticImageData;
   title: string;
   description: string;
   link: string;
@@ -26,7 +29,7 @@ const SingleProject = ({
     <SingleProjectDiv>
       <SingleProjectImageDiv>
         <SingleProjectImage
-          src={image}
+          src={image.src}
           alt='title'
         />
       </SingleProjectImageDiv>
@@ -34,7 +37,7 @@ const SingleProject = ({
       <SingleProjectDetailsDiv>
         <SingleProjectTitle>{title}</SingleProjectTitle>
         <SingleProjectDettail>{description}</SingleProjectDettail>
-        <SingleProjectButton to={`${link}`}>
+        <SingleProjectButton href={link}>
           <Button
             label='View Project'
             onClick={() => {}}

@@ -1,7 +1,7 @@
-import movix from "../assets/movix.png";
-import contact_saver from "../assets/contact_saver.png";
-import todo from "../assets/todo.png";
-import githubFinder from "../assets/github_finder.png";
+import movix from "../../public/assets/movix.png";
+import contact_saver from "../../public/assets/contact_saver.png";
+import todo from "../../public/assets/todo.png";
+import githubFinder from "../../public/assets/github_finder.png";
 
 const projects = [
     {

@@ -13,7 +13,7 @@ import SocialMedia from "./SocialMedia";
 import ScrollIndicator from "./ScrollIndicator";
 
 type Props = {};
-
+/* eslint-disable react/no-unescaped-entities */
 const HomeDash = ({}: Props) => {
   return (
     <HomeHero id='home'>

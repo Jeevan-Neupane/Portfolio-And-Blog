@@ -1,3 +1,4 @@
+'use client'
 import projects from "../../data/Projects";
 import Titles from "../../reusable/titles/Titles";
 import SingleProject from "./SingleProject";
@@ -13,14 +14,14 @@ const Projects = () => {
         />
 
         <ProjectsDiv>
-          {projects.map((project) => {
+          {projects?.map((project) => {
             return (
               <SingleProject
-                key={project.title}
-                image={project.image}
-                title={project.title}
-                description={project.description}
-                link={project.link}
+                key={project?.title}
+                image={project?.image}
+                title={project?.title}
+                description={project?.description}
+                link={project?.link}
               />
             );
           })}
